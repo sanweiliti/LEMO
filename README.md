@@ -1,5 +1,5 @@
-# Learning Human Motion Priors (HMP) for 4D Body Capture in 3D Scenes
-Official Pytorch implementation for 2021 ICCV (oral) paper "Learning Human Motion Priors (HMP) for 4D Body Capture in 3D Scenes"
+# Learning Human Motion Priors for 4D Body Capture in 3D Scenes (LEMO)
+Official Pytorch implementation for 2021 ICCV (oral) paper "Learning Human Motion Priors for 4D Body Capture in 3D Scenes"
 
 [[Project]](https://todo.html) [[Paper]](https://arxiv.org/todo.pdf)
 
@@ -17,8 +17,8 @@ Official Pytorch implementation for 2021 ICCV (oral) paper "Learning Human Motio
 
 When using the code/figures/data/video/etc., please cite our work
 ```
-@inproceedings{HMR:ICCV:2021,
-  title = {Learning Human Motion Priors (HMP) for 4D Body Capture in 3D Scenes},
+@inproceedings{Zhang:ICCV:2021,
+  title = {Learning Human Motion Priors for 4D Body Capture in 3D Scenes},
   author = {Zhang, Siwei and Zhang, Yan and Bogo, Federica and Pollefeys Marc and Tang, Siyu},
   booktitle = {International Conference on Computer Vision (ICCV)},
   month = oct,
