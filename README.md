@@ -1,7 +1,7 @@
 # Learning Motion Priors for 4D Human Body Capture in 3D Scenes (LEMO)
 Official Pytorch implementation for 2021 ICCV (oral) paper "Learning Motion Priors for 4D Human Body Capture in 3D Scenes"
 
-[[Project]](https://sanweiliti.github.io/LEMO/LEMO.html) [[Paper]](https://arxiv.org/todo.pdf)
+[[Project]](https://sanweiliti.github.io/LEMO/LEMO.html) [[Paper]](https://arxiv.org/pdf/2108.10399.pdf)
 
 <img src="images/teaser.jpg" width = 900 align=middle>
 
