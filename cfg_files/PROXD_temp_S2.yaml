@@ -1,0 +1,184 @@
+vposer_ckpt: "/mnt/hdd/PROX/body_models/vposer_v1_0"
+model_folder: '/mnt/hdd/PROX/body_models/smplx_model'
+
+recording_dir: '/mnt/hdd/PROX/recordings/N3OpenArea_00157_01'
+output_folder: '../fit_results_S2'
+interactive: False
+batch_size: 100
+
+gender: "male"
+
+gpu_id: 0
+
+render_results: False
+save_meshes: False
+
+
+##############
+smooth_acc: False
+smooth_acc_weights:
+    - 1e6
+
+
+###############
+smooth_vel: False
+smooth_vel_weights:
+    - 1e3
+
+
+##############
+use_motion_smooth_prior: True
+AE_Enc_path: '../runs/15217/Enc_last_model.pkl'
+motion_prior_smooth_weights:
+    - 1e8
+
+##############
+use_motion_infill_prior: False
+AE_infill_path: '../runs/59547/AE_last_model.pkl'
+conv_kernel: 3
+motion_infill_rec_weights:
+    - 2
+motion_infill_contact_weights:
+    - 0.1
+
+################
+data_weights:
+    - 1.0
+
+###############
+use_friction: True
+friction_normal_weights:
+    - 10.0
+friction_tangent_weights:
+    - 20.0
+
+
+############## collision loss
+sdf_penetration: True
+sdf_penetration_weights:
+    - 0.003
+
+
+############### contact loss
+contact: False
+load_scene: True
+contact_loss_weights:
+    - 1.0
+
+
+############## self-interpenetration loss
+interpenetration: False
+part_segm_fn: "/mnt/hdd/PROX/body_models/smplx_parts_segm.pkl"
+coll_loss_weights:
+    - 1e-5
+
+############### depth loss
+s2m: False
+m2s: False
+mask_on_color: True
+# Depth
+init_mode: 'scan'
+rho_m2s: 5e-1
+m2s_weights:
+    - 1.0
+
+#s2m: True
+rho_s2m: 2e-1
+s2m_weights:
+    - 5e2
+
+read_depth: True
+read_mask: True
+
+
+
+
+
+
+
+
+
+##############
+
+
+
+trans_opt_stages:
+    - 0
+
+
+
+
+focal_length_x: 1060.53
+focal_length_y: 1060.38
+camera_center_x: 951.30
+camera_center_y: 536.77
+flip: True
+camera_mode: 'fixed'
+
+
+
+
+shape_weights:
+    - 0
+
+###################
+dataset: 'openpose'
+joints_to_ign:  # todo: add 1(neck)? smplx has neck
+    - 1
+    - 9
+    - 12
+prior_folder: 'priors'
+result_folder: 'results'
+model_type: 'smplx'
+# Flag for using the GPU
+use_cuda: True
+float_dtype: "float32"
+use_joints_conf: True
+use_pca: True
+use_hands: True
+use_face: True
+flat_hand_mean: False
+# The number of mixture components for the pose prior
+num_gaussians: 8
+body_prior_type: 'l2'
+left_hand_prior_type: l2
+right_hand_prior_type: l2
+jaw_prior_type: 'l2'
+num_pca_comps: 12
+# The constant for the robust loss function
+rho: 100
+df_cone_height: 0.0001
+# Upper arms and Spine 2
+# Neck and jaw
+ign_part_pairs: ["9,16", "9,17", "6,16", "6,17", "1,2", "12,22"]
+penalize_outside: True
+max_collisions: 128
+
+optim_type: 'adam'  # lbfgsls/adam
+ftol: 1e-9
+gtol: 1e-9
+lr: 0.005
+# Max number of optimization iterations
+maxiters: 900  # 900/1000 for adam
+# Relative change in loss value
+
+
+hand_joints_weights:
+    - 2.0
+face_joints_weights:
+    - 2.0
+
+use_vposer: True
+
+
+body_pose_prior_weights:
+    - 4.78e-5
+hand_pose_prior_weights:
+    - 4.78e-5
+
+
+expr_weights:
+    - 0.03
+jaw_pose_prior_weights:
+    - 0.03
+

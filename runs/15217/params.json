@@ -1,0 +1,22 @@
+{
+    "batch_size": 60,
+    "body_mode": "global_markers",
+    "clip_seconds": 4,
+    "downsample": false,
+    "global_rot_norm": true,
+    "gpu_id": 0,
+    "input_padding": true,
+    "log_step": 500,
+    "lr": 0.0001,
+    "normalize": true,
+    "num_epoch": 100000,
+    "num_workers": 2,
+    "padding_mode": "reflect",
+    "pose_mode": "vposer",
+    "save_dir": "runs_try",
+    "save_step": 1000,
+    "weight_loss_rec_v": 1.0,
+    "weight_loss_z_smooth": 1000.0,
+    "with_hand": false,
+    "z_channel": 64
+}

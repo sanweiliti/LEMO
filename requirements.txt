@@ -1,0 +1,17 @@
+numpy==1.19.2
+open3d==0.12.0
+scipy==1.5.3
+sklearn==0.20.3
+smplx==0.1.26
+tensorboard==2.3.0
+tensorboardX==2.1
+torch==1.4.0
+torchgeometry==0.1.2
+tqdm==4.50.2
+matplotlib==3.3.2
+pyrender==0.1.43
+trimesh==3.8.12
+PyYAML==5.3.1
+configargparse
+pillow==8.0.1
+opencv-python

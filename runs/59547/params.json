@@ -1,0 +1,19 @@
+{
+    "batch_size": 120,
+    "body_mode": "local_markers_3dv_4chan",
+    "clip_seconds": 4,
+    "downsample": true,
+    "global_rot_norm": true,
+    "gpu_id": 4,
+    "log_step": 500,
+    "lr": 0.0001,
+    "normalize": true,
+    "num_epoch": 100000,
+    "num_workers": 2,
+    "save_dir": "runs_try",
+    "save_step": 1000,
+    "weight_loss_rec_body": 10.0,
+    "weight_loss_rec_body_v": 10.0,
+    "weight_loss_rec_contact_lbl": 1.0,
+    "with_hand": false
+}
