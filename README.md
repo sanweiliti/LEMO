@@ -72,6 +72,7 @@ The folders `res_opt_amass_perframe` and `res_opt_amass_temp` provides several f
 
 ## Fitting on PROX
 **Stage 1: per-frame fitting**, utilize fitted params from PROX dataset directly
+
 **Stage 2: temporal consistent fitting**: utilize motion smoothness prior
 ```
 cd temp_prox
