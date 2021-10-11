@@ -52,17 +52,17 @@ python train_infill_prior.py --amass_dir PATH/TO/AMASS --body_model_path PATH/TO
 ```
 
 ## Fitting on AMASS
-Stage 1: per-frame fitting, utilize motion infilling prior (e.x., on TotalCapture dataset, from first motion sequence to 100th motion sequence, optimize a motion sequence every 20 motion sequences)
+**Stage 1: per-frame fitting**, utilize motion infilling prior (e.x., on TotalCapture dataset, from first motion sequence to 100th motion sequence, optimize a motion sequence every 20 motion sequences)
 ```
 python opt_amass_perframe.py --amass_dir=PATH/TO/AMASS --body_model_path=PATH/TO/SMPLX/MODELS --body_mode=local_markers_4chan --dataset_name=TotalCapture --start=0 --end=100 --step=20 --save_dir=PATH/TO/SAVE/RESULUTS
 ```
-Stage 2: temporal fitting, utilize motion smoothness and infilling prior (e.x., on TotalCapture dataset, from first motion sequence to 100th motion sequence, optimize a motion sequence every 20 motion sequences)
+**Stage 2: temporal fitting**, utilize motion smoothness and infilling prior (e.x., on TotalCapture dataset, from first motion sequence to 100th motion sequence, optimize a motion sequence every 20 motion sequences)
 ```
 python opt_amass_tempt.py --amass_dir=PATH/TO/AMASS --body_model_path=PATH/TO/SMPLX/MODELS --body_mode=local_markers_4chan --dataset_name=TotalCapture --start=0 --end=100 --step=20 --perframe_res_dir=PATH/TO/PER/FRAME/RESULTS --save_dir=PATH/TO/SAVE/RESULTS
 ```
 Make sure that `start`, `end`, `step`, `dataset_name` are consistent between per-frame and temporal fitting, and `save_dir` in per frame fitting and `perframe_res_dir` in temporal fitting are consistent.
 
-Visualization of fitted results:
+**Visualization of fitted results:**
 ```
 python vis_opt_amass.py --body_model_path=PATH/TO/SMPLX/MODELS --dataset_name=TotalCapture --start=0 --end=100 --step=20 --load_dir=PATH/TO/FITTED/RESULTS
 ```
@@ -71,18 +71,18 @@ The folders `res_opt_amass_perframe` and `res_opt_amass_temp` provides several f
 
 
 ## Fitting on PROX
-Stage 1: per-frame fitting, utilize fitted params from PROX dataset directly
-Stage 2: temporal consistent fitting: utilize motion smoothness prior
+**Stage 1: per-frame fitting**, utilize fitted params from PROX dataset directly
+**Stage 2: temporal consistent fitting**: utilize motion smoothness prior
 ```
 cd temp_prox
 python main_slide.py --config=../cfg_files/PROXD_temp_S2.yaml --vposer_ckpt=/PATH/TO/VPOSER --model_folder=/PATH/TO/SMPLX/MODELS --recording_dir=/PATH/TO/PROX/RECORDINGS --output_folder=/PATH/TO/SAVE/RESULTS
 ```
-Stage 3: occlusion robust fitting: utilize motion smoothness and infilling prior
+**Stage 3: occlusion robust fitting**: utilize motion smoothness and infilling prior
 ```
 cd temp_prox
 python main_slide.py --config=../cfg_files/PROXD_temp_S3.yaml --vposer_ckpt=/PATH/TO/VPOSER --model_folder=/PATH/TO/SMPLX/MODELS --recording_dir=/PATH/TO/PROX/RECORDINGS --output_folder=/PATH/TO/SAVE/RESULTS
 ```
-Visualization of fitted results: 
+**Visualization of fitted results:**
 ```
 cd temp_prox/
 cd viz/

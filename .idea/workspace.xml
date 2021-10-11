@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09b3054e-d913-40fb-9d94-2e1e985f48b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cfg_files/PROXD_temp_S3.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loader/SSM2_withhand.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loader/optimize_loader_amass_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loader/train_loader_infill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loader/train_loader_smooth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opt_amass_perframe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opt_amass_temp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/15217/Dec_last_model.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/15217/Enc_last_model.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/15217/params.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/59547/AE_last_model.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/59547/params.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/camera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/cmd_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/data_parser_slide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/dist_chamfer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/fit_temp_loadprox_slide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/fitting_temp_slide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/main_slide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/misc_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/optimizers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/optimizers/lbfgs_ls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/optimizers/optim_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/prior.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/projection_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/renderer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/viz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_prox/viz/viz_fitting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_smooth_prior.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_infill_prior.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_smooth_prior.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/get_occlusion_mask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vis_opt_amass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaser.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="09b3054e-d913-40fb-9d94-2e1e985f48b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
