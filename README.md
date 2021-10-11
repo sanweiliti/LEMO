@@ -67,7 +67,7 @@ Make sure that `start`, `end`, `step`, `dataset_name` are consistent between per
 python vis_opt_amass.py --body_model_path=PATH/TO/SMPLX/MODELS --dataset_name=TotalCapture --start=0 --end=100 --step=20 --load_dir=PATH/TO/FITTED/RESULTS
 ```
 Set `--vis_option=static` will visualize a motion sequence in static poses, and set `--vis_option=animate` will visualize a motion sequence as animations.
-The folders `res_opt_amass_perframe` and `res_opt_amass_temp` provides several fitted sequences of Stage 1 and 2, resp..
+The folders `res_opt_amass_perframe` and `res_opt_amass_temp` provide several fitted sequences of Stage 1 and 2, resp..
 
 
 ## Fitting on PROX
@@ -95,7 +95,7 @@ The temporal fitting results on PROX can be downloaded [here](https://drive.goog
 It includes 2 file formats: 
 * `PROXD_temp`: PROX format (consistent with original PROX dataset). Each frame fitting result is saved as a single file.
 * `PROXD_temp_v2`: AMASS format (similar with AMASS dataset). Fitting results of a sequence are saved as a single file.
-* `convert_prox_format.py` converts the data from `PROXD_temp` format to `PROXD_temp_v2` format and visualizes the convereted format.
+* `convert_prox_format.py` converts the data from `PROXD_temp` format to `PROXD_temp_v2` format and visualizes the converetd format.
 
 ### TODO
 to update evaluation code
