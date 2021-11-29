@@ -10,7 +10,7 @@ Official Pytorch implementation for 2021 ICCV (oral) paper "Learning Motion Prio
 
 ## Installation
 The code has been tested on Ubuntu 18.04, python 3.8.5 and CUDA 10.0. Please download following models:
- * [SMPL-X models](https://smpl-x.is.tue.mpg.de): version 0.1.26
+ * [SMPL-X models](https://smpl-x.is.tue.mpg.de): version 1.0
  * [VPoser model](https://smpl-x.is.tue.mpg.de): version 1.0 (source code included in the our repo, `human_body_prior` folder)
 
 If you use the temporal fitting code for PROX dataset, please install following packages:

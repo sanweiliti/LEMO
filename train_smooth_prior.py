@@ -61,12 +61,12 @@ def train(writer, logger):
 
     smplx_model_path = os.path.join(args.body_model_path, 'smplx_model')
 
-    # amass_train_datasets = ['HumanEva', 'MPI_HDM05', 'MPI_mosh', 'Transitions_mocap',
-    #                         'ACCAD', 'BMLhandball', 'BMLmovi', 'BioMotionLab_NTroje', 'CMU',
-    #                         'DFaust_67', 'Eyes_Japan_Dataset', 'MPI_Limits']
-    # amass_test_datasets = ['TCD_handMocap', 'TotalCapture', 'SFU']
-    amass_train_datasets = ['HumanEva', 'BMLmovi']
-    amass_test_datasets = ['TCD_handMocap', 'TotalCapture']
+    amass_train_datasets = ['HumanEva', 'MPI_HDM05', 'MPI_mosh', 'Transitions_mocap',
+                            'ACCAD', 'BMLhandball', 'BMLmovi', 'BioMotionLab_NTroje', 'CMU',
+                            'DFaust_67', 'Eyes_Japan_Dataset', 'MPI_Limits']
+    amass_test_datasets = ['TCD_handMocap', 'TotalCapture', 'SFU']
+    # amass_train_datasets = ['HumanEva', 'BMLmovi']
+    # amass_test_datasets = ['TCD_handMocap', 'TotalCapture']
 
     preprocess_stats_dir = 'preprocess_stats'
     if not os.path.exists(preprocess_stats_dir):
