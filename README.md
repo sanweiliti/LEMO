@@ -97,8 +97,9 @@ It includes 2 file formats:
 * `PROXD_temp_v2`: AMASS format (similar with AMASS dataset). Fitting results of a sequence are saved as a single file.
 * `convert_prox_format.py` converts the data from `PROXD_temp` format to `PROXD_temp_v2` format and visualizes the converetd format.
 
-### TODO
-to update evaluation code
+## Additional Data
+We utilize LEMO code to fit initialized motion sequences for [RoHM](https://github.com/sanweiliti/RoHM) (but only use per-frame fitting, without the temporal term or the scene collision terms). 
+We provide a sample sequence [here](https://drive.google.com/file/d/1KGxHh0eeUQkepJ5_rDCeLJQJQdDuP7rY/view?usp=drive_link).
 
 ## Citation
 
